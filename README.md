@@ -1,38 +1,33 @@
-sys Modul Python
+Contoh Pustaka sys Python 🚀
 
-sys itu modul penting di Python buat ngatur hal-hal yang berhubungan langsung sama interpreter. Jadi kalau lo mau ambil argumen dari command line, keluarin program dengan rapi, cek versi Python, atau ngatur path import, semuanya lewat sini.
+Modul sys itu alat wajib kalau lo mau ngatur hal-hal yang berhubungan langsung sama interpreter Python. Mulai dari baca argumen, keluarin program, cek versi Python, sampai utak-atik path import. Simple tapi kepake banget.
 
-Apa Fungsi sys?
 
-sys jadi penghubung antara kode Python yang lo tulis sama interpreter yang ngejalanin kode itu. Makanya modul ini sering banget dipakai kalau bikin script atau tool yang butuh interaksi sama lingkungan Python.
+---
 
-Fitur-Fitur yang Sering Dipakai
+Apa yang Bisa sys Lakuin?
 
-1. sys.argv
-Buat ngambil argumen dari command line.
+• Baca argumen dari command line 🧾
+• Keluar dari program dengan rapi ✅
+• Cek versi Python yang lagi dipakai 🐍
+• Lihat dan ubah path import 📂
+• Interaksi langsung sama lingkungan interpreter ⚙️
 
-import sys
-print(sys.argv)
 
-2. sys.exit()
-Buat keluar dari program dengan cara yang rapi.
+---
 
-import sys
-sys.exit(0)
-
-3. sys.version
-Buat tau versi Python yang lagi dipakai.
+Contoh Cepat
 
 import sys
-print(sys.version)
 
-4. sys.path
-Buat lihat dan ngatur daftar folder yang dipakai Python buat nyari modul.
+print("Argumen:", sys.argv)
+print("Versi Python:", sys.version)
+print("Path Import:", sys.path)
 
-import sys
-print(sys.path)
 
-Contoh Pemakaian
+---
+
+Contoh Penggunaan Argumen
 
 import sys
 
@@ -43,23 +38,20 @@ if len(sys.argv) < 2:
 nama = sys.argv[1]
 print(f"Halo {nama}, selamat datang!")
 
-Cara jalannya:
+Jalanin via terminal:
 
-python app.py Randy
-
-Kapan sys Dipakai?
-
-Kalau lo butuh:
-
-Ambil input dari command line
-
-Keluarin program dengan rapi
-
-Cek lingkungan Python
-
-Atur path import
+python app.py
 
 
-Simpel tapi berguna banget. Cocok buat lo yang mau bikin script lebih fleksibel dan berasa kayak tool beneran.
+---
 
-Selamat ngulik!
+Kapan sys Dipake?
+
+• Kalau script lo butuh input dari user lewat command line
+• Kalau mau handle exit program biar lebih proper
+• Kalau pengen tau info interpreter Python
+• Kalau mau oprek path import modul
+
+sys itu ringan tapi penting buat bikin script yang berasa kayak tool beneran. Selamat ngulik! 😎🐍
+
+Udah gue sulap jadi gaya yang enak dibaca kayak contoh screenshot lo. Kalau mau ditambah emoji, warna, atau struktur lain tinggal bilang, gue gas terus.
